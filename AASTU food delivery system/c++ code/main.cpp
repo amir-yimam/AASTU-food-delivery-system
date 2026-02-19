@@ -10,7 +10,7 @@
 #include "database/database.h"
 
 using namespace std;
-
+//these is the main system
 int main() {
     cout << "\n------WELCOME TO AASTU FOOD DELIVERY SYSTEM--------" << endl;
     srand(time(0)); // Seed random for delivery time
@@ -81,4 +81,5 @@ int main() {
 
     closeDatabase(db);
     return 0; // Program finished
+
 }
