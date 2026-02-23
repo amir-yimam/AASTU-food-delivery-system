@@ -1,6 +1,6 @@
 #ifndef DATABASE_H
 #define DATABASE_H
-
+//forward declaration 
 #include <string>
 #include <vector>
 #include <utility>
@@ -40,5 +40,6 @@ void loadDataFromDatabase(sqlite3* db, std::vector<User>& users, std::vector<Res
 void insertOrder(sqlite3* db, int userId, int restaurantId, double totalPrice);
 void loadOrderHistory(sqlite3* db, const std::vector<User>& users);
 void closeDatabase(sqlite3* db);
+
 
 #endif // DATABASE_H
